@@ -1,0 +1,109 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Login box */
+  .login-box {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 26px;
+  }
+  
+  /* Input fields */
+  .login-box input[type="email"],
+  .login-box input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  
+  /* Login button */
+  .login-box button[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-box button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Links and separator */
+  .links {
+    margin-top: 20px;
+  }
+  
+  .links p {
+    margin-bottom: 10px;
+    color: #777;
+    font-size: 14px;
+  }
+  
+  /* Google Sign-In Button */
+  .google-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #444;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .google-btn img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .google-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 500px) {
+    .login-box {
+      padding: 30px 20px;
+    }
+  
+    .login-box h2 {
+      font-size: 22px;
+    }
+  }
+  

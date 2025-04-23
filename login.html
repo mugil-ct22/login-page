@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quizera</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-box">
+    <h2>BIT Quizera</h2>
+    <form id="loginForm">
+      <input type="email" placeholder="Email" name="email" required>
+      <input type="password" placeholder="Password" name="password" id="password" required>
+      <button type="submit">Login</button>
+      <div class="links">
+        <p>Or</p>
+        <button type="button" class="google-btn" onclick="signInWithGoogle()">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo">
+          Sign in with Google
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const passwordInput = document.getElementById('password');
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+      } else {
+        passwordInput.type = 'password';
+      }
+    }
+
+    function signInWithGoogle() {
+      alert("Google Sign-In clicked! (Integrate your auth logic here)");
+      // window.location.href = 'student_dashboard.html';
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = e.target.email.value;
+      const password = e.target.password.value;
+
+      if (email === 'mugilan@gmail.com' && password === 'mugilan@123') {
+        alert("Login successful");
+        // window.location.href = 'student_dashboard.html';
+      } else {
+        alert('Invalid email or password. Please try again.');
+      }
+    });
+  </script>
+</body>
+</html>
